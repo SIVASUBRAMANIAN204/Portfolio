@@ -207,10 +207,17 @@
         font-size: 18px;
         font-family: "OpenSauceRegular";
         color: #777;
+        .gmail_content{
+            font-size: large;
+        }
         a{
             text-decoration: none;
-
+            font-size: 30px !important;
             color: #777 !important;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover{
+            color: #9ef0ff !important;
         }
     }
 }

@@ -151,7 +151,7 @@ export class HomeComponent {
         ease:"sine",
        
       },{
-        x: `-${nameWidth/2}`,
+        x: `-${nameWidth/3}`,
         
       });
       mynameTl.to(".name_bottom_line",{width: '100%'})

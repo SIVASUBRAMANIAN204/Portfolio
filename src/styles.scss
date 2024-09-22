@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('/src/assets/css/font-face.scss');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --primary: #9ef0ff;
+    --secondary: #777;
+}
 body{
     padding: 0;
     margin: 0;
