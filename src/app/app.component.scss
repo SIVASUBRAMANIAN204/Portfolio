@@ -1,0 +1,236 @@
+.main_container{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+   
+    background-color: #000;
+}
+.top_nav{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'OpenSauceRegular';
+    .designation_title{
+        line-height: 1.2;
+        font-size: 18px;
+        color: #777;
+    }
+    .date_time{
+        line-height: 1.2;
+        font-size: 18px;
+        color: #777;   
+    }
+   
+}
+.contact_btn{
+    background-color: transparent;
+    color: #777;
+    padding: 1px 20px;
+    border: #777 2px solid;
+    outline: none;
+    font-size: 20px;
+    font-family: 'OpenSauceRegular';
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-size: 100% 0;
+    text-decoration: none;
+    margin: 0 10px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: linear-gradient(to top, #9ef0ff 100%, transparent 100%);
+}
+.contact_btn:hover{
+    background-size: 100% 100%;
+    color: #000;    
+    
+    
+}
+.initial_view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.5vw;
+    font-family: 'Bebas Neue';
+    height: 100vh;
+   .bar{
+        scale: 1;
+   }
+   
+    h2{
+        font-size: 20vw;
+        height: max-content;
+    }
+    .FrontEnd{
+        display:flex;
+       
+        align-items: center;
+    }
+    .Developer{
+        margin-top: -8vw;
+        display: flex;
+    }
+    .letter{
+        color: #777;
+    }
+    
+    .letter_active{
+        color: #9eb8ff; 
+    }
+    .letter:hover{
+        color: #acfbff;
+    }
+
+
+}
+.initial_view_line{
+    width: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    height: 2.5px;
+    background-color: #bcbcbc;
+}
+.line{
+    width: 0;
+    margin-bottom: 30px;
+    margin-right: auto;
+    height: 2.5px;
+    background-color: #797979;
+}
+.normal_line{
+    width:100%;
+    // margin-bottom: 30px;
+    margin-right: auto;
+    height: 2.5px;
+    background-color: #6d6d6dad;
+}
+.letter_active{
+    color: #9ef0ff !important; 
+}
+.name_view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -2.9vw;
+
+    font-family: 'OpenSauceRegular';
+    text-wrap: nowrap;
+    overflow-x: hidden;
+    .name_letter{
+        color: #777;
+        
+    
+    }
+    span{
+        font-size: 18vw;
+    }
+}
+.about_container{
+    height: 100vh;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'OpenSauceRegular';
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    overflow-x: hidden;
+    .about_title{
+        color: #777;
+        font-size: 24px;
+        
+        margin-bottom: 20px;
+        font-family: 'OpenSauceSemiBold';
+    }
+    .about_content{
+        font-size: 2.5vw;
+        line-height: 1.1;
+        text-align: center;
+        font-family: 'OpenSauceSemiBold';
+        color: rgb(158, 158, 158);
+    }
+    
+}
+
+.skills_container{
+    padding: 30px;
+    margin-bottom:30px;
+    height: max-content;
+    .skills_title{
+        color: #777;
+        font-size: 40px;
+        font-family: "OpenSauceRegular";
+    }
+
+    .skills_content{
+        margin-top: 30px;
+    }
+    .skill{
+        font-size: 20px;
+        font-family: "OpenSauceRegular";
+        color: #969696;
+    }
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%; /* Add padding to start off-screen */
+}
+
+.collaborate{
+    color: #777;
+    font-family: "OpenSauceRegular";
+    font-size: 5vw;
+}
+.gmail_box{
+    text-align: center;
+}
+
+#contact{
+    margin: 30px 0;
+
+    .gmail_box{
+        font-size: 18px;
+        font-family: "OpenSauceRegular";
+        color: #777;
+        .gmail_content{
+            font-size: large;
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px !important;
+            color: #777 !important;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover{
+            color: #9ef0ff !important;
+        }
+    }
+}
+.bottom_bar{
+    display: flex;
+    font-size: 1.4vw;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'OpenSauceRegular';
+    .city_name{
+        line-height: 1.2;
+        font-size: 14px;
+        color: #777;
+    }
+}
