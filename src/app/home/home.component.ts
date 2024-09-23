@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Scrollbar from 'smooth-scrollbar';
-
+import Lenis from '@studio-freight/lenis';
 gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-home',
@@ -11,22 +10,45 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  lenis!: Lenis;
     ngOnInit(){
 
-
-
-
+     
+     
        
     }
-
-    ngAfterViewInit(){
-      this.LoadAnimation();
-
-        
-    
+    ngAfterViewInit() {
+      this.LoadAnimation(); 
+      const lenis = new Lenis({
+        duration: 2.5,
+        easing: function easeOutSine(x: number): number {
+          return Math.sin((x * Math.PI) / 2);
+        },
+        smoothWheel: true,
+        wheelMultiplier: 0.5, // Lower scroll speed for mouse wheel
+      });
+      
+      // Override default passive wheel event to allow preventDefault
+      window.addEventListener(
+        'wheel',
+        (e) => {
+          e.preventDefault();
+          lenis.raf(e.timeStamp); // Ensure smooth scrolling still works
+        },
+        { passive: false }
+      );
+      
+      // GSAP integration
+      lenis.on('scroll', ScrollTrigger.update);
+      
+      gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+      });
+      
+      gsap.ticker.lagSmoothing(0);
+      
     }
-
+    
     LoadAnimation(){
   
       
