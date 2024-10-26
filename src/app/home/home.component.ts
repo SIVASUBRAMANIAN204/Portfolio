@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Scrollbar from 'smooth-scrollbar';
+
 
 gsap.registerPlugin(ScrollTrigger);
 @Component({
