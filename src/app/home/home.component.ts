@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import { NgModel } from '@angular/forms';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Application } from '@splinetool/runtime';
+import Scrollbar from 'smooth-scrollbar';
 
-gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -26,12 +25,10 @@ export class HomeComponent {
         
     
     }
-    
+
     LoadAnimation(){
-     
+  
       
-
-
         const now = new Date();
 
       // Extract the date, time, and day
